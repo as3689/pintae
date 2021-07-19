@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+  list-style-type: none;
+
+}
+h1 {
+  margin: 20px 0 0 50px;
+
+}
+#men_form {
+  
+  width: 650px;
+  margin: 10px 0 0 50px;
+  font-size: 30px;
+  color:#444444;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.cols li {
+  display: inline-block;
+  margin-top: 5px;
+}
+.cols li.col1{
+ width: 100px;
+ text-align: right;
+}
+.cols li.col2 {
+  width: 370px;
+}
+.cols li.col3 {
+  text-align: center;
+  margin-top: 20px;
+}
+input {
+  width: 500px;
+  height: 50px;
+}
+textarea {
+  width: 500px;
+  height: 200px;
+}
+
+#image {
+  width: 170px;
+}
+
+#send {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+
+.send_main {
+  display: flex;
+  justify-content: center;
+}

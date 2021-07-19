@@ -1,0 +1,260 @@
+/* iPhone */
+@media (min-width: 320px) and (max-width: 568px) {
+    .menu{
+        display:none;
+    }
+    .menu-media{
+        display:block;
+    }
+    .start-page{
+        position:relative;
+        height:750px;
+        z-index:10;
+        background:url('/img/mainimg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .start-page .content {
+        width:300px;
+        height:100%;
+    }
+    .start-page, .start-page .opacity{
+        height:100%;
+    }
+    .start-page .content .text {
+        width:300px;
+    }
+    .start-page .content .text .logo{
+        width:123px;
+        height:123px;
+        margin:0 auto;
+        margin-top:40px;
+        margin-bottom:30px;
+    }
+    h1 {
+        font-size:30px;
+    }
+    .about-us h1 {
+        margin-top:0;
+    }
+    .about-us .content{
+        width:300px;
+    }
+    .about-us hr,.portfolio .portfolio-margin hr,
+     .contact hr {
+        width:106px;
+    }
+    .about-us .column-one,
+     .about-us .column-two{
+         width:300px;
+         margin-bottom:20px;
+        }
+    .about-us .content .column-three{
+        width:300px;
+        margin-bottom:70px;
+    }
+    .portfolio .portfolio-margin{
+        width:300px;
+    }
+    .contact .content .contact-text{
+        padding-left:0px;
+        width:300px;
+        text-align:center;
+        margin-top:60px;}
+    .contact{
+        margin:0 auto;
+    }
+    .footer{
+        position:relative;
+    }
+    }
+    
+    /* iPhone6 */
+    @media (min-width: 375px) and (max-width: 667px) {
+    .menu{
+        display:none;
+    }
+    .menu-media{
+        display:block;
+    }
+    .start-page{
+        position:relative;
+        height:750px;
+        z-index:10;
+        background:url('/img/mainimg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .start-page .content {
+        width:300px;
+        height:100%;
+    }
+    .start-page, .start-page .opacity{
+        height:100%;
+     }
+    .start-page .content .text {
+        width:300px;
+     }
+    .start-page .content .text .logo{
+        width:123px;
+        height:123px;
+        margin:0 auto;
+        margin-top:40px;
+        margin-bottom:30px;
+     }
+    h1 {
+        font-size:30px;
+     }
+    .about-us h1 {
+        margin-top:0;
+     }
+    .about-us .content{
+        width:300px;
+     }
+    .about-us hr,.portfolio .portfolio-margin hr,
+     .contact hr {
+        width:106px;
+     }
+    .about-us .column-one, .about-us .column-two{
+        width:300px;
+        margin-bottom:20px;
+     }
+    .about-us .content .column-three{
+        width:300px;
+        margin-bottom:70px;
+     }
+    .portfolio .portfolio-margin{
+        width:300px;
+     }
+    
+    .contact .content .contact-text{
+        padding-left:0px;
+        width:300px;
+        text-align:center;
+        margin-top:60px;
+    }
+    .grid li{
+        margin:0 0 15px 0;
+    }
+    .contact{
+         margin:0 auto;
+        }
+    .footer{
+        position:relative;
+    }
+    }
+    
+    /* iPad */
+    @media (min-width: 580px) and (max-width:767px) {
+    .menu{display:none;}
+    .menu-media{display:block;}
+    .menu-media .menu-content{width:540px;}
+    .start-page{
+        position:relative;
+        height:1000px;
+        z-index:10;
+        background:url('/img/mainimg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .start-page .content {
+        width:300px;
+        height:100%;
+    }
+    .start-page, .start-page .opacity{
+        height:100%;
+    }
+    .start-page .content .text {
+        width:300px;
+    }
+    h1 {
+        font-size:36px;
+    }
+    .about-us h1 {
+        margin-top:0;
+    }
+    .about-us .content{
+        width:300px;
+    }
+    .about-us hr,.portfolio .portfolio-margin hr,
+     .contact hr {
+         width:106px;
+        }
+    .about-us .column-one, .about-us .column-two{
+        width:300px;
+        margin-bottom:20px;
+    }
+    .about-us .column-three{
+        width:300px;
+        margin-bottom:70px;
+    }
+    .portfolio .portfolio-margin{
+        width:300px;
+    }
+    .contact .content .contact-text{
+        padding-left:0px;
+        width:300px;
+        text-align:center;
+        margin-top:60px;
+    }
+    .contact .content .contact-text {
+        width:275px;
+    }
+    .contact{
+         margin:0 auto;
+        }
+    .footer{
+        position:relative;
+    }
+    }
+    
+    /* iPad2 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+    .menu-content .logo{
+        width:200px;
+    }
+    .menu-content{
+        width:700px;
+    }
+    .start-page{
+        position:relative;
+        height:1000px;
+        z-index:10;
+        background:url('/img/mainimg.jpg');
+        background-repeat: no-repeat;
+         background-size: cover;
+        }
+    .about-us .content{
+         width:700px;
+        }
+    .about-us p{
+        width:200px;
+    }
+    .about-us h2{
+        letter-spacing:2px;
+    }
+    .about-us .column-one{
+        width:233px;
+    }
+    .about-us .column-two{
+        width:233px;
+    }
+    .about-us .column-three{
+        width:233px;
+    }
+    .portfolio .portfolio-margin {
+        width:600px;
+    }
+    .contact{
+        margin:0 auto;
+    }
+    .contact .content {
+        width:700px
+    }
+    .footer{
+        position:relative;
+    }
+    .contact .content .contact-text {
+        width:275px;
+    }
+    }

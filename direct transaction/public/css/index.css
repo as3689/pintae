@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;   
+  font-family: 'Noto Sans KR', sans-serif;
+	vertical-align: baseline;
+}
+
+header {
+    font-weight: bold;
+    background-color: rgb(202, 228, 245);
+    padding: 5px;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(38, 24, 224);    
+    text-shadow: 3px 3px burlywood;
+    display: flex;
+    justify-content: center;
+
+}
+header img {
+  height: 44px;
+  margin: 5px;
+}
+
+nav {
+    background-color: rgba(13, 1, 14, 0.788);
+}
+
+/* button */
+:root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgba(168, 239, 255, 1);
+    --c2: rgba(168, 239, 255, 0.1);
+  }
+  
+.wrapper {
+    min-width: min(1rem, 100%);
+  }
+  
+  .box {
+    font-size: 20px;
+    text-decoration:none;
+    color: whitesmoke;
+    border: 0.35rem solid;
+    padding: 1rem;
+
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+  }
+  
+  .box:nth-child(2) {
+    border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+    animation: borderRadial var(--d) linear infinite forwards;
+  }
+  
+  @keyframes borderRotate {
+    100% {
+      --angle: 420deg;
+    }
+  }
+  
+  @keyframes borderRadial {
+    20% {
+      --gradX: 100%;
+      --gradY: 50%;
+    }
+    40% {
+      --gradX: 100%;
+      --gradY: 100%;
+    }
+    60% {
+      --gradX: 50%;
+      --gradY: 100%;
+    }
+    80% {
+      --gradX: 0%;
+      --gradY: 50%;
+    }
+    100% {
+      --gradX: 50%;
+      --gradY: 0%;
+    }
+  }
+nav  ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav  ul  li {
+    display: inline;
+    margin: 10px 20px;
+    padding: 10px;
+   
+}
+
+nav ul li a {
+    padding: 10px;
+    margin: 10px;
+}
+
+ /* main-page */
+#home-main-section-top {
+    background-color: #f3ddc2;
+
+}
+#home-main-section-top #home-main-top {
+    height: 740px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f3ddc2;
+}
+
+
+#home-main-section-top .home-main-title {
+    font-size: 2.8rem;
+    line-height: 1.3;
+    padding-top: 27rem;
+    margin-bottom: 3.2rem;
+    letter-spacing: -0.4px;
+    padding-left: 70px;
+    margin-left: 20rem;
+}
+
+.text-m{
+    padding-left: 70px;
+    font-size: 20px;
+    margin-left: 20rem;
+}
+
+#home-main-section-top .home-main-image-top {
+    position: absolute;
+    right: 16rem;
+    bottom: 3rem;
+    width: 30rem;
+    height: 29rem;
+}
+
+#home-main-section-top .home-main-image-top img {
+    position: absolute;
+    top:65px;
+    right: 83px;
+    bottom: -12px;
+    width: 532px;
+    height: 416px;
+    display: none;
+ 
+}
+
+#home-main-section-top .home-main-image-top1 img {
+    position: absolute;
+    top: 123px;
+    right: 8px;
+    width: 593px;
+    height: 502px;
+    display: none;
+
+}
+
+.fadeShow { 
+    position: absolute;
+    width: 32rem;
+    height: 28rem;
+    top: 10rem;
+    right: 35rem;     
+       }
+.fadeShow .active {
+    z-index: 1;
+}
+
+.fadeShow img {
+    position: absolute;
+    width: 40rem;
+    height: 32rem;
+    border-radius: 10%;
+  }
+
+/* footer */
+#footer {
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:28px;
+    padding-top: 10px;   
+    background:rgb(236, 236, 236);
+    text-align: center;
+}

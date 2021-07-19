@@ -1,0 +1,377 @@
+/* iPhone */
+@media (min-width: 320px) and (max-width: 568px) {
+.menu{display:none;}
+.menu-media{display:block;}
+
+/* 햄버거 셋팅 */
+/* 
+#btn {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	top: 50%;
+	left: 80%;
+	transform: translate(60%, 40%);
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+}
+
+#btn span {
+	position: absolute;
+	width: 25px;
+	height: 3px;
+	top: 50%;
+	left: 50%;
+	background: #262626;
+	border-radius: 2px;
+	overflow: hidden;
+	transition: all 0.3s linear;
+}
+
+#btn span::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: gray;
+	transition: all 0.3s linear;
+}
+
+#btn span:nth-child(1) {
+	animation: span-first-off 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#btn span:nth-child(2) {
+	animation: span-second-off 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#btn span:nth-child(3) {
+	animation: span-third-off 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#btn.on:hover span::before {
+	width: 100%;
+	transition: all 0.3s linear;
+}
+
+#btn.on span:nth-child(1) {
+	animation: span-first-on 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#btn.on span:nth-child(2) {
+	animation: span-second-on 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#btn.on span:nth-child(3) {
+	animation: span-third-on 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes span-first-on {
+	0% {
+		transform: translate(-50%, -300%);
+	}
+	30% {
+		transform: translate(-50%, -50%);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+}
+
+@keyframes span-first-off {
+	0% {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+	30% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -300%);
+	}
+}
+
+@keyframes span-second-on {
+	0% {
+		transform: translate(-50%, -50%);
+	}
+	25% {
+		background: gray;
+	}
+	50% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	100% {
+		transform: translate(-150%, -50%) scale(0);
+	}
+}
+
+@keyframes span-second-off {
+	0% {
+		transform: translate(-150%, -50%) scale(0);
+	}
+	25% {
+		background: gray;
+	}
+	50% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes span-third-on {
+	0% {
+		transform: translate(-50%, 200%);
+	}
+	30% {
+		transform: translate(-50%, -50%);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+}
+
+@keyframes span-third-off {
+	0% {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+	30% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, 200%);
+	}
+} */
+/* 
+.credits {
+  display: block;
+  color: white;
+  width: 100%;
+  font-family: $mainFont;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.credits {
+  display: block;
+  color: white;
+  width: 100%;
+  font-family: $mainFont;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.6;
+} */
+
+.start-page{
+	position:relative;
+	height:750px;
+	z-index:10;
+	background:url('/img/mainimg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;}
+.start-page .content {width:300px;height:100%;}
+.start-page, .start-page .opacity{height:100%;}
+.start-page .content .text {width:300px;}
+.start-page .content .text .logo{
+	width:123px;
+	height:123px;
+	margin:0 auto;
+	margin-top:40px;
+	margin-bottom:30px;}
+.start-page .content .text .read-more{
+	width:183px;
+	height:47px;
+	margin:70px auto;
+	line-height:47px;
+	border:1px solid white;
+	text-transform:uppercase;
+	color:white;
+	display:block;
+	cursor:pointer;
+	font-size:14px;
+	letter-spacing:1px;
+	background:none;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;}
+h1 {font-size:30px;}
+.about-us h1 {margin-top:0;}
+.about-us .content{width:300px;}
+.about-us hr,.portfolio .portfolio-margin hr, .contact hr {width:106px;}
+.about-us .column-one, .about-us .column-two{width:300px;margin-bottom:20px;}
+.about-us .content .column-three{width:300px;margin-bottom:70px;}
+.portfolio .portfolio-margin{width:300px;}
+.contact, .contact .content, .contact .content .form{width:300px;}
+.contact .content .contact-text{
+	padding-left:0px;
+	width:300px;
+	text-align:center;
+	margin-top:60px;}
+/* input{width:320px;} */
+/* input.submit{width:140px;height:47px;float:right;margin-right:75px;line-height:47px;border:1px solid #333333;text-align:center;color:#333333;cursor:pointer;font-size:14px;background:none;-webkit-transition: all 0.6s ease-in;-moz-transition: all 0.6s ease-in;-ms-transition: all 0.6s ease-in;-o-transition: all 0.6s ease-in;transition: all 0.6s ease-in;} */
+/* textarea{width:320px;}*/
+.contact .content .contact-text {width:275px;}
+/*.contact .content .form .column, .contact .content .form .column-3{width:320px;}
+.contact .content .form .column-2{width:320px;padding-left:0;} */
+/* .grid li{margin:0 0 15px 0;} */
+.contact{ margin:0 auto;}
+.footer{position:relative;}
+}
+
+/* iPhone6 */
+@media (min-width: 375px) and (max-width: 667px) {
+.menu{display:none;}
+.menu-media{display:block;}
+.start-page{
+	position:relative;
+	height:750px;
+	z-index:10;
+	background:url('/img/mainimg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;}
+.start-page .content {
+	width:300px;
+	height:100%;}
+.start-page, .start-page .opacity{
+	height:100%;
+ }
+.start-page .content .text {
+	width:300px;
+ }
+.start-page .content .text .logo{
+	width:123px;
+	height:123px;
+	margin:0 auto;
+	margin-top:40px;
+	margin-bottom:30px;
+ }
+.start-page .content .text .read-more{
+	width:183px;
+	height:47px;
+	margin:70px auto;
+	line-height:47px;
+	border:1px solid white;
+	text-transform:uppercase;
+	color:white;
+	display:block;
+	cursor:pointer;
+	font-size:14px;
+	letter-spacing:1px;
+	background:none;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+ }
+h1 {
+	font-size:30px;
+ }
+.about-us h1 {
+	margin-top:0;
+ }
+.about-us .content{
+	width:300px;
+ }
+.about-us hr,.portfolio .portfolio-margin hr, .contact hr {
+	width:106px;
+ }
+.about-us .column-one, .about-us .column-two{
+	width:300px;
+	margin-bottom:20px;
+ }
+.about-us .content .column-three{
+	width:300px;
+	margin-bottom:70px;
+ }
+.portfolio .portfolio-margin{
+	width:300px;
+ }
+.contact, .contact .content, .contact .content .form{
+	width:300px;
+}
+.contact .content .contact-text{padding-left:0px;width:300px;text-align:center;margin-top:60px;}
+input{width:320px;}
+input.submit{width:140px;height:47px;float:right;margin-right:75px;line-height:47px;border:1px solid #333333;text-align:center;color:#333333;cursor:pointer;font-size:14px;background:none;-webkit-transition: all 0.6s ease-in;-moz-transition: all 0.6s ease-in;-ms-transition: all 0.6s ease-in;-o-transition: all 0.6s ease-in;transition: all 0.6s ease-in;}
+textarea{width:320px;}
+.contact .content .contact-text {width:275px;}
+.contact .content .form .column, .contact .content .form .column-3{width:320px;}
+.contact .content .form .column-2{width:320px;padding-left:0;}
+.grid li{margin:0 0 15px 0;}
+.contact{ margin:0 auto;}
+.footer{position:relative;}
+}
+
+/* iPad */
+@media (min-width: 580px) and (max-width:767px) {
+.menu{display:none;}
+.menu-media{display:block;}
+.menu-media .menu-content{width:540px;}
+.start-page{position:relative;height:1000px;z-index:10;background:url('/img/mainimg.jpg');background-repeat: no-repeat;background-size: cover;}
+.start-page .content {width:300px;height:100%;}
+.start-page, .start-page .opacity{height:100%;}
+.start-page .content .text {width:300px;}
+h1 {font-size:36px;}
+.about-us h1 {margin-top:0;}
+.about-us .content{
+width:300px;}
+.about-us hr,.portfolio .portfolio-margin hr, .contact hr {width:106px;}
+.about-us .column-one, .about-us .column-two{width:300px;margin-bottom:20px;}
+.about-us .column-three{width:300px;margin-bottom:70px;}
+.portfolio .portfolio-margin{width:300px;}
+.partners .content{width:400px;}
+.partners .logo {width:400px;}
+.partners .logo img {width:80px;padding-bottom:20px;}
+.contact, .contact .content, .contact .content .form{width:300px;}
+.contact .content .contact-text{padding-left:0px;width:300px;text-align:center;margin-top:60px;}
+.contact .content .contact-text {width:275px;}
+.contact .content .form .column, .contact .content .form .column-3{width:420px;}
+.contact .content .form .column-2{width:420px;padding-left:0;}
+.contact{ margin:0 auto;}
+.footer{position:relative;}
+input{width:420px;}
+input.submit{width:140px;height:47px;float:right;margin-right:75px;line-height:47px;border:1px solid #333333;text-align:center;color:#333333;cursor:pointer;font-size:14px;background:none;-webkit-transition: all 0.6s ease-in;-moz-transition: all 0.6s ease-in;-ms-transition: all 0.6s ease-in;-o-transition: all 0.6s ease-in;transition: all 0.6s ease-in;}
+textarea{width:420px;}
+}
+
+/* iPad2 */
+@media (min-width: 768px) and (max-width: 1023px) {
+.menu-content .logo{width:200px;}
+.menu-content{width:700px;}
+.start-page{position:relative;height:1000px;z-index:10;background:url('/img/mainimg.jpg');background-repeat: no-repeat; background-size: cover;}
+.about-us .content{ width:700px;}
+.about-us p{width:200px;}
+.about-us h2{letter-spacing:2px;}
+.about-us .column-one{width:233px;}
+.about-us .column-two{width:233px;}
+.about-us .column-three{width:233px;}
+.portfolio .portfolio-margin {width:600px;}
+.partners .content{width:700px;}
+.partners .logo {width:700px;}
+.contact{ margin:0 auto;}
+.contact .content {width:700px}
+.footer{position:relative;}
+.contact .content .form{width:355px;}
+input{width:320px;}
+input.submit{width:140px;height:47px;float:right;margin-right:75px;line-height:47px;border:1px solid #333333;text-align:center;color:#333333;cursor:pointer;font-size:14px;background:none;-webkit-transition: all 0.6s ease-in;-moz-transition: all 0.6s ease-in;-ms-transition: all 0.6s ease-in;-o-transition: all 0.6s ease-in;transition: all 0.6s ease-in;}
+textarea{width:320px;}
+.contact .content .contact-text {width:275px;}
+.contact .content .form .column, .contact .content .form .column-3{width:450px;}
+.contact .content .form .column-2{width:450px;padding-left:0;}
+}
