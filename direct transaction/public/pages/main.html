@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직거래장터</title>
+    <link href="../images/배경지운파일.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+      <div class="navbar-logo">
+          <img src="../images/배경지운파일.png" alt="">
+          <a href="#">직거래장터(Used Deals)</a>
+      </div> 
+      <ul class="nav_menu">
+          <li style="background-color: rgb(202, 228, 245);">관리자님 환영합니다~!</li>
+          <li onclick="javascript:btn()"><a href="#">검색</a></li>
+          <li onclick="javascript:btn()"><a href="#">알림</a></li>
+          <li onclick="javascript:btn()"><a href="#">로그아웃</a></li>
+      </ul>
+      </nav>
+
+      <!-- list -->
+      <div class="container mt-3" id="template">
+      
+      </div>
+      <ul class="menu">
+        <li><a href="../pages/main.html" class="box">홈</a></li>
+        <li><a href="#" class="box"onclick="javascript:btn()">키워드등록</a></li>
+        
+         <li><a href="../pages/upload.html" class="box">글쓰기</a></li>
+        <li><a href="#" class="box"onclick="javascript:btn()">채팅</a></li>
+        <li><a href="#" class="box"onclick="javascript:btn()">설정</a></li>
+       </ul>
+
+      
+       <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+    apiKey: "AIzaSyAkBW7XnUUmAUKye3wAy_Hb7JSYMxSFVck",
+    authDomain: "direct-transaction.firebaseapp.com",
+    databaseURL: "https://direct-transaction-default-rtdb.firebaseio.com",
+    projectId: "direct-transaction",
+    storageBucket: "direct-transaction.appspot.com",
+    messagingSenderId: "99146947077",
+    appId: "1:99146947077:web:7f2651ab698552965c1a6c",
+    measurementId: "G-MZJVYQNWGR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  </script>
+
+  <script>
+  const db = firebase.firestore();
+  db.collection('product').get().then((result)=>{
+    result.forEach((doc)=>{
+      console.log(doc.data())
+      var st_date = new Date().toISOString().substr(0, 10).replace('T', ' ')
+      var template = `<div class="product">
+      <div class="thumbnail" style="background-image: url('https://via.placeholder.com/350')"></div>
+      <div class="flex-grow-1 p-4">
+        <h5 class="title">${doc.data().제목}</h5>
+        <p class="price">판매가격:\n${doc.data().가격}원</p>
+        <p class="content">상세내용:\n${doc.data().내용}</p>
+        <p class="date">${st_date}</p>
+        <p class="float-end">🤍 0</p>
+      </div>
+      </div>`;
+      $('.container').append(template)
+    }) 
+  })
+  function btn(){ alert('준비중입니다. 현재 홈버튼,글쓰기만 가능합니다.'); }
+  </script>
+</body>
+</html>
